@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 int main() {
 	double x;
@@ -15,9 +14,9 @@ int main() {
         std::cin >> r;
 	std::cout << "Enter the radius of the bigger circle: ";
         std::cin >> bigR;
-	vectLength = sqrt(x*x + y*y);
+	vectLength = x*x + y*y;
 	if (r <= bigR) {
-		if ((r < vectLength) && (vectLength < bigR)) {
+		if ((r*r < vectLength) && (vectLength < bigR*bigR)) {
 			std::cout << "The point lies within the ring" << '\n';
 		} else {
 			std::cout << "The point lies out of the ring" << '\n';
