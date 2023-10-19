@@ -2,11 +2,11 @@
 #include <cmath>
 
 int main() {
-	float x;
-	float y;
-	float r;
-	float bigR;
-	float vectLength;
+	double x;
+	double y;
+	double r;
+	double bigR;
+	double vectLength;
 	std::cout << "Enter the x coordinate of the point: ";
 	std::cin >> x;
 	std::cout << "Enter the y coordinate of the point: ";

@@ -2,12 +2,12 @@
 #include <cmath>
 
 int main() {
-	float a;
-	float b;
-	float c;
-	float disc;
-	float x1 = 0.0;
-	float x2 = 0.0;
+	double a;
+	double b;
+	double c;
+	double disc;
+	double x1 = 0.0;
+	double x2 = 0.0;
 	std::cout << "Input the first coefficient number: ";
 	std::cin >> a;
 	std::cout << "Input the secomd coefficient number: ";
