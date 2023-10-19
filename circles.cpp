@@ -16,10 +16,14 @@ int main() {
 	std::cout << "Enter the radius of the bigger circle: ";
         std::cin >> bigR;
 	vectLength = sqrt(x*x + y*y);
-	if ((r < vectLength) && (vectLength < bigR)) {
-		std::cout << "The point lies within the ring" << '\n';
+	if (r <= bigR) {
+		if ((r < vectLength) && (vectLength < bigR)) {
+			std::cout << "The point lies within the ring" << '\n';
+		} else {
+			std::cout << "The point lies out of the ring" << '\n';
+		}
 	} else {
-		std::cout << "The point lies out of the ring" << '\n';
+		std::cout << "Check failed. Outer circle appears to be smaller than the inner one" << '\n';
 	}
 	return(0);
 }
